@@ -20,6 +20,9 @@ window-vibrancy = "0.4.0"
 rustube = "0.6.0"
 config = "0.11.0"
 dirs = "5.0.1"
+reqwest = {version ="0.11",features = ["blocking"] }
+pin-utils = "0.1.0"
+tokio-stream = {version = "0.1.14", features = ["full"] }
  
 [features]
 # This feature is used for production builds or when a dev server is not specified, DO NOT REMOVE!!

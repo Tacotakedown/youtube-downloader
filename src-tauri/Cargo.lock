@@ -4428,6 +4428,7 @@ dependencies = [
  "futures-core",
  "pin-project-lite",
  "tokio",
+ "tokio-util",
 ]
 
 [[package]]
@@ -5623,12 +5624,15 @@ version = "0.0.0"
 dependencies = [
  "config",
  "dirs",
+ "pin-utils",
+ "reqwest",
  "rustube",
  "serde 1.0.197",
  "serde_json",
  "tauri",
  "tauri-build",
  "tokio",
+ "tokio-stream",
  "window-shadows",
  "window-vibrancy",
 ]

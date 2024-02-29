@@ -6,12 +6,16 @@ use window_shadows::set_shadow;
 use window_vibrancy::apply_mica;
 
 mod config;
+mod converter;
+mod downloader;
+mod error_wrapper;
 
 fn main() {
     tauri::Builder::default()
         .invoke_handler(tauri::generate_handler![
             config::read_config,
-            config::write_config
+            config::write_config,
+            downloader::download_youtube_video
         ])
         .setup(|app| {
             let window = app.get_window("main").unwrap();
